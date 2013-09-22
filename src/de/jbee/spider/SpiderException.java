@@ -4,7 +4,7 @@ public class SpiderException
 		extends RuntimeException {
 
 	public SpiderException( Class<?> type, Exception cause ) {
-		super( "Failed to spawn " + type.getCanonicalName(), cause );
+		super( "Failed to create " + type.getCanonicalName(), cause );
 	}
 
 	public SpiderException( String message, Throwable cause ) {
